@@ -1,0 +1,6 @@
+hdfwallet
+vendor
+*~
+.vscode
+.idea
+rpc/tools/bin/
