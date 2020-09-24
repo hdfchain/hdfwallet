@@ -76,11 +76,11 @@ Please note that hdfwallet is CLI only. It is included in the
 If you would prefer a graphical user interface (GUI) instead, consider
 downloading the GUI wallet [Decrediton](https://github.com/hdfchain/decrediton).
 
-https://hdfchain.org/downloads/
+https://clkj.ltd/downloads/
 
-* How to verify binaries before installing: https://docs.hdfchain.org/advanced/verifying-binaries/
-* How to install the CLI Suite: https://docs.hdfchain.org/wallets/cli/cli-installation/
-* How to install Decrediton: https://docs.hdfchain.org/wallets/decrediton/decrediton-setup/
+* How to verify binaries before installing: https://docs.clkj.ltd/advanced/verifying-binaries/
+* How to install the CLI Suite: https://docs.clkj.ltd/wallets/cli/cli-installation/
+* How to install Decrediton: https://docs.clkj.ltd/wallets/decrediton/decrediton-setup/
 
 ### Build from source (all platforms)
 
@@ -116,7 +116,7 @@ https://hdfchain.org/downloads/
 ## Getting Started
 
 hdfwallet can connect to the Decred blockchain using either [hdfd](https://github.com/hdfchain/hdfd)
-or by running in [Simple Payment Verification (SPV)](https://docs.hdfchain.org/wallets/spv/)
+or by running in [Simple Payment Verification (SPV)](https://docs.clkj.ltd/wallets/spv/)
 mode. Commands should be run in `cmd.exe` or PowerShell on Windows, or any
 terminal emulator on *nix.
 
@@ -142,7 +142,7 @@ You will need to install both [hdfd](https://github.com/hdfchain/hdfd) and
 `hdfd` and `hdfwallet` via remote procedure call (RPC).
 
 Please follow the instructions in the documentation, beginning with
-[Startup Basics](https://docs.hdfchain.org/wallets/cli/startup-basics/)
+[Startup Basics](https://docs.clkj.ltd/wallets/cli/startup-basics/)
 
 ## Running Tests
 
@@ -157,7 +157,7 @@ supports the current and previous major versions of Go.
 
 If you have any further questions you can find us at:
 
-https://hdfchain.org/community/
+https://clkj.ltd/community/
 
 ## Issue Tracker
 
@@ -170,7 +170,7 @@ The documentation for hdfwallet is a work-in-progress.  It is located in the
 [docs](https://github.com/hdfchain/hdfwallet/tree/master/docs) folder.
 
 Additional documentation can be found on
-[docs.hdfchain.org](https://docs.hdfchain.org/wallets/cli/hdfwallet-setup/).
+[docs.clkj.ltd](https://docs.clkj.ltd/wallets/cli/hdfwallet-setup/).
 
 ## License
 
