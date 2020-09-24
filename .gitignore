@@ -1,0 +1,8 @@
+cmd/movefunds/movefunds
+cmd/sweepaccount/sweepaccount
+hdfwallet
+vendor
+*~
+.vscode
+.idea
+rpc/tools/bin/
