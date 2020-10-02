@@ -1,5 +1,5 @@
 // Copyright (c) 2015 The btcsuite developers
-// Copyright (c) 2015-2017 The Decred developers
+// Copyright (c) 2015-2017 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -485,7 +485,7 @@ func (s *Store) rangeBlockTransactions(ctx context.Context, ns walletdb.ReadBuck
 			details = append(details, detail)
 		}
 
-		// Decred: Block records are saved even when no transactions are
+		// Hdfchain: Block records are saved even when no transactions are
 		// included.  This is used to save the votebits from every
 		// block.  This differs from btcwallet where every block must
 		// have one transaction.  Since f may only be called when

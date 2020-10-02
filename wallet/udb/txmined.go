@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2015 The btcsuite developers
-// Copyright (c) 2015-2017 The Decred developers
+// Copyright (c) 2015-2017 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -409,7 +409,7 @@ func (s *Store) InsertMissingCFilters(dbtx walletdb.ReadWriteTx, blockHashes []*
 	return nil
 }
 
-// BlockCFilter is a compact filter for a Decred block.
+// BlockCFilter is a compact filter for a Hdfchain block.
 type BlockCFilter struct {
 	BlockHash chainhash.Hash
 	FilterV2  *gcs2.FilterV2

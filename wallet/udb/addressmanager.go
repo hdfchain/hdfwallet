@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -608,7 +608,7 @@ func (m *Manager) CoinTypePrivKey(dbtx walletdb.ReadTx) (*hdkeychain.ExtendedKey
 // CoinType returns the BIP0044 coin type currently in use.  Early versions of
 // the wallet used coin types that conflicted with other coins, preventing use
 // of the same seed in multicurrency wallets.  New (not restored) wallets are
-// now created using the coin types assigned to Decred in SLIP0044:
+// now created using the coin types assigned to Hdfchain in SLIP0044:
 //
 //  https://github.com/satoshilabs/slips/blob/master/slip-0044.md
 //
@@ -640,7 +640,7 @@ func (m *Manager) CoinType(dbtx walletdb.ReadTx) (uint32, error) {
 }
 
 // UpgradeToSLIP0044CoinType upgrades a wallet from using the legacy coin type
-// to the coin type registered to Decred as per SLIP0044.  On mainnet, this
+// to the coin type registered to Hdfchain as per SLIP0044.  On mainnet, this
 // upgrades the coin type from 20 to 42.  On testnet and simnet, the coin type
 // is upgraded to 1.  This upgrade is only possible if the SLIP0044 coin type
 // private key is saved and there is no address use for keys derived by the

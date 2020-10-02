@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2020 The Decred developers
+// Copyright (c) 2018-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -31,7 +31,7 @@ import (
 // they do not provide each of these services.
 const reqSvcs = wire.SFNodeNetwork | wire.SFNodeCF
 
-// Syncer implements wallet synchronization services by over the Decred wire
+// Syncer implements wallet synchronization services by over the Hdfchain wire
 // protocol using Simplified Payment Verification (SPV) with compact filters.
 type Syncer struct {
 	// atomics

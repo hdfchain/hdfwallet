@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2020 The Decred developers
+// Copyright (c) 2017-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -44,7 +44,7 @@ const (
 // Address is a human-readable encoding of an output script.
 //
 // Address encodings may include a network identifier, to prevent misuse on an
-// alternate Decred network.
+// alternate Hdfchain network.
 type Address interface {
 	String() string
 

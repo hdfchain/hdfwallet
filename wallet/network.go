@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2019 The Decred developers
+// Copyright (c) 2017-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -27,7 +27,7 @@ type FilterProof = struct {
 	Proof      []chainhash.Hash
 }
 
-// Peer provides wallets with a subset of Decred network functionality available
+// Peer provides wallets with a subset of Hdfchain network functionality available
 // to a single peer.
 type Peer interface {
 	Blocks(ctx context.Context, blockHashes []*chainhash.Hash) ([]*wire.MsgBlock, error)
@@ -36,7 +36,7 @@ type Peer interface {
 	PublishTransactions(ctx context.Context, txs ...*wire.MsgTx) error
 }
 
-// NetworkBackend provides wallets with Decred network functionality.  Some
+// NetworkBackend provides wallets with Hdfchain network functionality.  Some
 // wallet operations require the wallet to be associated with a network backend
 // to complete.
 //

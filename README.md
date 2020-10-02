@@ -1,7 +1,7 @@
 hdfwallet
 =========
 
-hdfwallet is a daemon handling Decred wallet functionality.  All interaction
+hdfwallet is a daemon handling Hdfchain wallet functionality.  All interaction
 with the wallet is performed over RPC.
 
 Public and private keys are derived using the hierarchical
@@ -23,7 +23,7 @@ does mean they could track all transactions involving your addresses
 and therefore know your exact balance.  In a future release, public data
 encryption will extend to transactions as well.
 
-hdfwallet provides two modes of operation to connect to the Decred
+hdfwallet provides two modes of operation to connect to the Hdfchain
 network.  The first (and default) is to communicate with a single
 trusted `hdfd` instance using JSON-RPC.  The second is a
 privacy-preserving Simplified Payment Verification (SPV) mode (enabled
@@ -115,7 +115,7 @@ https://clkj.ltd/downloads/
 
 ## Getting Started
 
-hdfwallet can connect to the Decred blockchain using either [hdfd](https://github.com/hdfchain/hdfd)
+hdfwallet can connect to the Hdfchain blockchain using either [hdfd](https://github.com/hdfchain/hdfd)
 or by running in [Simple Payment Verification (SPV)](https://docs.clkj.ltd/wallets/spv/)
 mode. Commands should be run in `cmd.exe` or PowerShell on Windows, or any
 terminal emulator on *nix.
@@ -146,7 +146,7 @@ Please follow the instructions in the documentation, beginning with
 
 ## Running Tests
 
-All tests may be run using the script `run_tests.sh`. Generally, Decred only
+All tests may be run using the script `run_tests.sh`. Generally, Hdfchain only
 supports the current and previous major versions of Go.
 
 ```sh

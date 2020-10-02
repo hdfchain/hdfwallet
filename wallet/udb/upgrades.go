@@ -1,4 +1,4 @@
-// Copyright (c) 2017 The Decred developers
+// Copyright (c) 2017 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -66,7 +66,7 @@ const (
 	// slip0044CoinTypeVersion is the seventh version of the database.  It
 	// introduces the possibility of the BIP0044 coin type key being either the
 	// legacy coin type used by earlier versions of the wallet, or the coin type
-	// assigned to Decred in SLIP0044.  The upgrade does not add or remove any
+	// assigned to Hdfchain in SLIP0044.  The upgrade does not add or remove any
 	// required keys (the upgrade is done in a backwards-compatible way) but the
 	// database version is bumped to prevent older software from assuming that
 	// coin type 20 exists (the upgrade is not forwards-compatible).
@@ -86,7 +86,7 @@ const (
 	hasExpiryFixedVersion = 9
 
 	// cfVersion is the tenth version of the database.  It adds a bucket to
-	// store compact filters, which are required for Decred's SPV
+	// store compact filters, which are required for Hdfchain's SPV
 	// implementation, and a txmgr namespace root key which tracks whether all
 	// main chain compact filters were saved.  This version does not begin to
 	// save compact filter headers, since the SPV implementation is expected to

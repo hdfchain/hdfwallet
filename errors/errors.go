@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019 The Decred developers
+// Copyright (c) 2018-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -71,7 +71,7 @@ const (
 	Consensus                       // Consensus violation
 	DoubleSpend                     // Transaction is a double spend
 	Protocol                        // Protocol violation
-	NoPeers                         // Decred network is unreachable due to lack of peers or hdfd RPC connections
+	NoPeers                         // Hdfchain network is unreachable due to lack of peers or hdfd RPC connections
 	Deployment                      // Inactive consensus deployment
 )
 
@@ -116,7 +116,7 @@ func (k Kind) String() string {
 	case Protocol:
 		return "protocol violation"
 	case NoPeers:
-		return "Decred network is unreachable"
+		return "Hdfchain network is unreachable"
 	case Deployment:
 		return "inactive deployment"
 	default:

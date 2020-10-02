@@ -1,4 +1,4 @@
-// Copyright (c) 2017 The Decred developers
+// Copyright (c) 2017 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -14,7 +14,7 @@ import (
 )
 
 // UpgradeToSLIP0044CoinType upgrades the wallet from the legacy BIP0044 coin
-// type to one of the coin types assigned to Decred in SLIP0044.  This should be
+// type to one of the coin types assigned to Hdfchain in SLIP0044.  This should be
 // called after a new wallet is created with a random (not imported) seed.
 //
 // This function does not register addresses from the new account 0 with the

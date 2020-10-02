@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -1768,7 +1768,7 @@ func (w *Wallet) signVoteOrRevocation(addrmgrNs walletdb.ReadBucket, ticketPurch
 		}
 		doneFuncs = append(doneFuncs, done)
 
-		// secp256k1 pubkeys are always compressed in Decred
+		// secp256k1 pubkeys are always compressed in Hdfchain
 		return key.Serialize(), dcrec.STEcdsaSecp256k1, true, nil
 	}
 	var getScript txscript.ScriptClosure = func(addr dcrutil.Address) ([]byte, error) {

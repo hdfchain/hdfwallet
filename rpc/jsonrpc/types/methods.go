@@ -1,5 +1,5 @@
 // Copyright (c) 2014 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -916,7 +916,7 @@ func NewSignMessageCmd(address, message string) *SignMessageCmd {
 }
 
 // RawTxInput models the data needed for raw transaction input that is used in
-// the SignRawTransactionCmd struct.  Contains Decred additions.
+// the SignRawTransactionCmd struct.  Contains Hdfchain additions.
 type RawTxInput struct {
 	Txid         string `json:"txid"`
 	Vout         uint32 `json:"vout"`

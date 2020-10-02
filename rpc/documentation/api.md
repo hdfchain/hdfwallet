@@ -84,7 +84,7 @@ rules of Semantic Versioning (SemVer) 2.0.0.
 ## `WalletLoaderService`
 
 The `WalletLoaderService` service provides the caller with functions related to
-the management of the wallet and its connection to the Decred network.  It has
+the management of the wallet and its connection to the Hdfchain network.  It has
 no dependencies and is always running.
 
 **Methods:**
@@ -319,7 +319,7 @@ or upon received an error.
 - `string network_address`: The host/IP and optional port of the RPC server to
   connect to.  IP addresses may be IPv4 or IPv6.  If the port is missing, a
   default port is chosen corresponding to the default hdfd RPC port of the
-  active Decred network.
+  active Hdfchain network.
 
 - `string username`: The RPC username required to authenticate to the RPC
   server.
@@ -1065,7 +1065,7 @@ wallet.
 
 - `string address`: The payment address string.
 
-- `string public_key`: The public key encoded as a string in the Decred encoding
+- `string public_key`: The public key encoded as a string in the Hdfchain encoding
   format.
 
 **Expected errors:**
@@ -1530,7 +1530,7 @@ ___
 #### `PublishTransaction`
 
 The `PublishTransaction` method publishes a signed, serialized transaction to
-the Decred network.  If the transaction spends any of the wallet's unspent
+the Hdfchain network.  If the transaction spends any of the wallet's unspent
 outputs or creates a new output controlled by the wallet, it is saved by the
 wallet and republished later if it or a double spend are not mined.
 

@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -1692,7 +1692,7 @@ func (w *Wallet) SignHashes(ctx context.Context, hashes [][]byte, addr dcrutil.A
 func (w *Wallet) SignMessage(ctx context.Context, msg string, addr dcrutil.Address) (sig []byte, err error) {
 	const op errors.Op = "wallet.SignMessage"
 	var buf bytes.Buffer
-	wire.WriteVarString(&buf, 0, "Decred Signed Message:\n")
+	wire.WriteVarString(&buf, 0, "Hdfchain Signed Message:\n")
 	wire.WriteVarString(&buf, 0, msg)
 	messageHash := chainhash.HashB(buf.Bytes())
 	var privKey *secp256k1.PrivateKey
@@ -1722,7 +1722,7 @@ func VerifyMessage(msg string, addr dcrutil.Address, sig []byte, params dcrutil.
 	// Validate the signature - this just shows that it was valid for any pubkey
 	// at all. Whether the pubkey matches is checked below.
 	var buf bytes.Buffer
-	wire.WriteVarString(&buf, 0, "Decred Signed Message:\n")
+	wire.WriteVarString(&buf, 0, "Hdfchain Signed Message:\n")
 	wire.WriteVarString(&buf, 0, msg)
 	expectedMessageHash := chainhash.HashB(buf.Bytes())
 	pk, wasCompressed, err := ecdsa.RecoverCompact(sig, expectedMessageHash)
